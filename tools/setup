@@ -36,5 +36,6 @@ if ! type code &> /dev/null; then
     fi
 fi
 
+yarn set version latest
 yarn
 yarn dlx @yarnpkg/sdks vscode

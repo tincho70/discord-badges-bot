@@ -1,4 +1,4 @@
-import { ReactionEntry } from '../model/ReactionEntry'
+import { ReactionEntry } from '../types'
 
 export default async (): Promise<ReactionEntry[]> => {
     return [
@@ -15,7 +15,8 @@ export default async (): Promise<ReactionEntry[]> => {
         },
         // chat-general
         {
-            "channelId": "1075103050009690180",
+            //"channelId": "1075103050009690180",
+            "channelId": "1091343446985412660",
             "reactions": [
                 "\u{1f44d}",  // THUMBS UP SIGN
                 "\u{1f91d}",  // HANDSHAKE
