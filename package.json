@@ -10,6 +10,8 @@
         "prod": "tsc && node ./dist/index.js"
     },
     "dependencies": {
+        "@types/debug": "^4.1.8",
+        "debug": "^4.3.4",
         "discord.js": "^14.9.0",
         "dotenv": "^16.0.3",
         "nostr-relaypool": "^0.6.23",

@@ -1,8 +1,8 @@
-import { Client, GatewayIntentBits } from 'discord.js'
-import { readdirSync } from 'fs'
-import { join } from 'path'
+import { Client, GatewayIntentBits } from 'discord.js';
+import { readdirSync } from 'fs';
+import { join } from 'path';
 
-require('dotenv').config()
+require('dotenv').config();
 
 const client = new Client({
     intents: [
@@ -11,11 +11,11 @@ const client = new Client({
         GatewayIntentBits.GuildMessageReactions,
         GatewayIntentBits.MessageContent,
     ]
-})
+});
 
-const handlersDir = join(__dirname, "./handlers")
+const handlersDir = join(__dirname, "./handlers");
 readdirSync(handlersDir).forEach(handler => {
-    require(`${handlersDir}/${handler}`)(client)
+    require(`${handlersDir}/${handler}`)(client);
 })
 
-client.login(process.env.DISCORD_BOT_TOKEN)
+client.login(process.env.DISCORD_BOT_TOKEN);
